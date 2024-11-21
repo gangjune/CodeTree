@@ -10,6 +10,12 @@ bool isprime(int i){
 int main() {
     int a, b, n = 0;
     cin >> a >> b;
+    if(a == b){
+        if(isprime(a)){
+            cout << a;
+            return 0;
+        }
+    }
     for(int i = a; i <= b; i++){
         if (isprime(i) == true){
             n += i;
