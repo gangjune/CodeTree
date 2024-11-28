@@ -10,8 +10,8 @@ int main() {
     }
     char dir;
     int loc = 1000;
-   // list[loc] = 1;
     for(int i = 0; i < n; i++){
+        x = 0;
         cin >> x >> dir;
         if(dir == 'L'){
             for(int j = loc-1; j >= loc-x; j--){
@@ -32,7 +32,10 @@ int main() {
     }
     int cnt=0;
     for(int i = 0; i < 2000; i++){
-        if(list[i] > 1) cnt++;
+        if(list[i] > 1) {
+            cout << i-1000 << endl;
+            cnt++;
+        }
     }
     cout << cnt;
     return 0;
