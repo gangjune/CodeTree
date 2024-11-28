@@ -33,7 +33,6 @@ int main() {
     int cnt=0;
     for(int i = 0; i < 2000; i++){
         if(list[i] > 1) {
-            cout << i-1000 << endl;
             cnt++;
         }
     }
