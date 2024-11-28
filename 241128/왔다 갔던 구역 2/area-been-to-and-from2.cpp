@@ -20,7 +20,7 @@ int main() {
             loc -= x;
         }
         else if(dir == 'R'){
-            for(int j = loc+1; j <= loc+x; j++){
+            for(int j = loc; j <= loc+x-1; j++){
                 list[j]++;
             }
             loc += x;
