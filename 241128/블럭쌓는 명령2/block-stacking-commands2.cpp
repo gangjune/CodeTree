@@ -9,11 +9,14 @@ int main() {
         list[i] = 0;
     }
     for(int i = 0; i < k; i++){
+        a = 0;
+        b = 0;
         cin >> a >> b;
         for(int j = a; j <= b; j++){
             list[j]++;
         }
     }
+
     int max = 0;
     for(int i = 0; i < n; i++){
         if(max < list[i]) max = list[i];
