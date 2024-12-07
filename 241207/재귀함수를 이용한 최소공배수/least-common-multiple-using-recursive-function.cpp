@@ -2,7 +2,7 @@
 using namespace std;
 int list[10];
 int LCM(int i, int m){
-    if(i == 0) return m;
+    if(i == -1) return m;
     int x, r;
     x = list[i]*m;
     for(;;){
